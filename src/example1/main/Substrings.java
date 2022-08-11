@@ -7,6 +7,7 @@ public class Substrings {
     private static final String[] EMPTY_STRING_ARRAY = new String[0];
 
     private static boolean isEmpty(final CharSequence cs) {
+
         return cs == null || cs.length() == 0;
     }
 
