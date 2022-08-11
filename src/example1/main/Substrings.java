@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Substrings {
-
     private static final String[] EMPTY_STRING_ARRAY = new String[0];
 
     private static boolean isEmpty(final CharSequence cs) {
