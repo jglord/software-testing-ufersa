@@ -4,8 +4,6 @@
 
 #### Prof: Flavia Coelho
 
-- Verificação: 
-- Validação: 
 
 
 
