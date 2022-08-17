@@ -7,7 +7,7 @@ public class Date {
 
     private static final int[] daysPerMonth= {0,31,28,31,30,31,30,31,31,30,31,30,31};
 
-    //dado o ano, confirma o valor adequado para o mês e dia
+    // Dado o ano, confirma o valor adequado para o mês e dia
     public Date(int month, int day, int year){
 
         //verifica se o mês está no intervalo 1-12
