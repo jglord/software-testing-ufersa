@@ -88,7 +88,14 @@ public class DateTest {
 
     // Testar se o mes é 2
     // Testar se o mês é 2 e o dia > 29
+    @Test
+    void month2DayMore29(){
+        int month = 2;
+        int day = 30;
+        int year = 2023;
 
-
-
+        assertThatThrownBy(() -> {
+            new Date(month, day, year);
+        }).isInstanceOf(IllegalArgumentException.class);
+    }
 }
