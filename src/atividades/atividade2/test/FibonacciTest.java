@@ -31,6 +31,6 @@ public class FibonacciTest {
 
     @Test
     void isN(){
-        assertThat(Fibonacci.fib(10)).isEqualTo(34);
+        assertThat(Fibonacci.fib(10)).isEqualTo(55);
     }
 }

@@ -23,10 +23,22 @@ public class DateTest {
     }
 
     @Test
+    void invalidYear(){
+        int year = -2020; // Invalid day
+        assertThatThrownBy(() -> {
+            new Date(10, 10, year );
+        }).isInstanceOf(IllegalArgumentException.class);
+    }
+
+    @Test
     void invalidDay(){
         int day = 50; // Invalid day
         assertThatThrownBy(() -> {
             new Date(10, day, 2020 );
+        }).isInstanceOf(IllegalArgumentException.class);
+
+        assertThatThrownBy(() -> {
+            new Date(10, 0, 2020 );
         }).isInstanceOf(IllegalArgumentException.class);
     }
 
@@ -85,7 +97,6 @@ public class DateTest {
         }).isInstanceOf(IllegalArgumentException.class);
     }
 
-    // Testar se o mes é 2
     // Testar se o mês é 2 e o dia > 29
     @Test
     void month2DayMore29(){

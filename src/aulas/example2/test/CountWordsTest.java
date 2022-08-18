@@ -1,7 +1,6 @@
 package aulas.example2.test;
 
 import aulas.example2.main.CountWords;
-import example3.main.CountWords;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
