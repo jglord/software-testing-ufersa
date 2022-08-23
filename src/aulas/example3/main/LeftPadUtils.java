@@ -1,3 +1,5 @@
+package aulas.example3.main;
+
 public class LeftPadUtils {
 
     private static final String SPACE = " ";
