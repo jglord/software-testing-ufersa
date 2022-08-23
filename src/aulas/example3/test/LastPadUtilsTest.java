@@ -26,7 +26,10 @@ public class LastPadUtilsTest {
                 of("abc", 5, "-", "--abc"),
                 of("abc", 3, "-", "abc"),
                 of("abc", 0, "-", "abc"),
-                of("abc", 2, "-", "abc")
+                of("abc", 2, "-", "abc"),
+                of("abc", 5, "--", "--abc"),
+                of("abc", 5, "---", "--abc"),
+                of("abc", 5, "-", "--abc")
         );
     }
 }
