@@ -30,6 +30,7 @@ public class LastPadUtilsTest {
                 of("abc", 5, "--", "--abc"),
                 of("abc", 5, "---", "--abc"),
                 of("abc", 5, "-", "--abc")
+
         );
     }
 }
