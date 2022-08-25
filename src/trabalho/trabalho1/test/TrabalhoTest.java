@@ -20,7 +20,7 @@ public class TrabalhoTest {
         assertThat(Trabalho.rotate(null, 1)).isEqualTo(null);
     }
 
-    // T3: str is empty ""
+    // T3: str is empty, length = 0 -> ""
     @Test
     void strIsEmpty(){
         assertThat(Trabalho.rotate("", 2)).isEqualTo("");
@@ -31,12 +31,22 @@ public class TrabalhoTest {
     void rightRotate(){
         assertThat(Trabalho.rotate("abc", 2)).isEqualTo("bca");
     }
+
     // T5: Left  rotate / "abc", -2 ->  "cab"
     @Test
     void leftRotate(){
         assertThat(Trabalho.rotate("abc", -2)).isEqualTo("cab");
     }
 
+    // T6: shift % str.length = 0 / shift = 6, str.length = 3
+    @Test
+    void shiftModLen(){
+        assertThat(Trabalho.rotate("abc", 6)).isEqualTo("abc");
+    }
 
-
+    // T7: Shift > strlen && shift % strlen != zero
+    @Test
+    void shiftBiggerStrlen(){
+        assertThat(Trabalho.rotate("abc", 5)).isEqualTo("bca");
+    }
 }
