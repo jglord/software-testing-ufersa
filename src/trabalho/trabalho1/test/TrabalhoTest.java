@@ -23,8 +23,20 @@ public class TrabalhoTest {
     // T3: str is empty ""
     @Test
     void strIsEmpty(){
-
         assertThat(Trabalho.rotate("", 2)).isEqualTo("");
     }
+    
+    // T4: Right rotate / "abc", 2 ->  "bca"
+    @Test
+    void rightRotate(){
+        assertThat(Trabalho.rotate("abc", 2)).isEqualTo("bca");
+    }
+    // T5: Left  rotate / "abc", -2 ->  "cab"
+    @Test
+    void leftRotate(){
+        assertThat(Trabalho.rotate("abc", -2)).isEqualTo("cab");
+    }
+
+
 
 }
