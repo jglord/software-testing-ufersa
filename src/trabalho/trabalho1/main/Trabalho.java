@@ -24,9 +24,17 @@ public class Trabalho {
 
         final int offset = - (shift % strLen);
 
-        builder.append(str.substring(offset));
+        if( offset > 0 ){
+            builder.append(str.substring(offset));
 
-        builder.append(str, 0, offset);
+            builder.append(str, 0, offset);
+        }
+        else if ( offset < 0 ){
+            builder.append(str.substring(-offset - 1));
+
+            builder.append(str, 0, -offset - 1);
+        }
+
 
         return builder.toString();
 
