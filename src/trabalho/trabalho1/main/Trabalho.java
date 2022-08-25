@@ -5,7 +5,7 @@ package trabalho.trabalho1.main;
 public class Trabalho {
 
     public static void main(String[] args) {
-        System.out.println(rotate("abc", -2));
+        System.out.println(rotate("abc", 2));
     }
 
     public static String rotate(final String str, final int shift) {
@@ -30,9 +30,9 @@ public class Trabalho {
             builder.append(str, 0, offset);
         }
         else if ( offset < 0 ){
-            builder.append(str.substring(-offset - 1));
+            builder.append(str.substring((-offset) - 1));
 
-            builder.append(str, 0, -offset - 1);
+            builder.append(str, 0, (-offset) - 1);
         }
 
 
