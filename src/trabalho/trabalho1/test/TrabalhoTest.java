@@ -7,7 +7,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class TrabalhoTest {
 
-
     // T1: shift == 0
     @Test
     void shiftIsZero(){
