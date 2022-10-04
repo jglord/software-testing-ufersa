@@ -1,4 +1,4 @@
-package aulas.example10.main;
+package aulas.example1.main;
 
 import java.time.Clock;
 import java.time.LocalDate;
