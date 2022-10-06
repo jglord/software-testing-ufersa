@@ -16,9 +16,9 @@ public class UserServiceTest {
 
     //----------------------------------------------
     //---------------->SENHA VÁLIDA<----------------
-    //    1 - 6 caracteres alfanumericos
-    //    2 - 1 letra maiuscula
-    //    3 - 1 caracter especial
+    //--> 6 caracteres alfanumericos
+    //--> 1 letra maiuscula
+    //--> 1 caracter especial
     //----------------------------------------------
     //----------------------------------------------
 
@@ -65,7 +65,6 @@ public class UserServiceTest {
         for(int i = 0; i < 6; i++){
             us.isValidUser(String.valueOf(i), validPasswords[i]);
             //passwordEncoder.encode(validPasswords[i]);
-
             verify(passwordEncoder).encode(passwordCaptor.capture());
             assertEquals(validPasswords[i], passwordCaptor.getValue());
         }
