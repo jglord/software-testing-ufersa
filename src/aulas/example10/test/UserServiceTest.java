@@ -42,6 +42,7 @@ public class UserServiceTest {
         passwordEncoder.encode(invalidPassword);
         verify(passwordEncoder).encode(invalidPassword);
     }
+    
 
     // T3 -> Verifique as interações com a interface PasswordEncoder, para garantir que cada senha seja verificada uma vez (Dica: times()).
     @ParameterizedTest
